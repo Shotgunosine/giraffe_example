@@ -465,7 +465,7 @@
           "name": "template",
           "output": false,
           "outputPort": false,
-          "value": "'sub-01/anat/sub-01_T1w.nii.gz'",
+          "value": "'sub-01/bold/sub-01_task-simon_run-?_bold'",
           "visible": true,
           "iterator": false
         },

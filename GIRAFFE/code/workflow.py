@@ -24,7 +24,7 @@ my_io_DataSink.inputs.base_directory = '/tmp'
 #Generic datagrabber module that wraps around glob in an
 my_io_S3DataGrabber = pe.Node(io.S3DataGrabber(outfields=["func"]), name = 'my_io_S3DataGrabber')
 my_io_S3DataGrabber.inputs.sort_filelist = True
-my_io_S3DataGrabber.inputs.template = 'sub-01/anat/sub-01_T1w.nii.gz'
+my_io_S3DataGrabber.inputs.template = 'sub-01/bold/sub-01_task-simon_run-?_bold'
 my_io_S3DataGrabber.inputs.bucket_path = 'ds000101/ds000101_R2.0.0/uncompressed/'
 my_io_S3DataGrabber.inputs.local_directory = '/tmp'
 
